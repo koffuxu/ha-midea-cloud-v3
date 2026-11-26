@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Select OAuth2 Application Credentials"
+      },
+      "configure": {
+        "title": "Configure Midea Homes & Polling",
+        "description": "Select the Midea homes to import and polling preferences.",
+        "data": {
+          "homegroup_ids": "Homes",
+          "include_offline": "Include offline devices",
+          "scan_interval": "Polling interval (seconds)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Midea Cloud V3",
+        "description": "Your Midea OAuth2 session has expired. Please authorize again."
+      }
+    },
+    "abort": {
+      "already_configured": "This Midea account is already configured.",
+      "cannot_connect": "Failed to connect to Midea Cloud V3.",
+      "missing_credentials": "Please add Midea Cloud V3 application credentials first.",
+      "missing_user_id": "Midea did not return a valid openUid for this account.",
+      "oauth_error": "OAuth2 authorization failed.",
+      "wrong_account": "The authorized Midea account does not match the existing entry."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Midea Cloud V3 Options",
+        "data": {
+          "homegroup_ids": "Homes",
+          "include_offline": "Include offline devices",
+          "scan_interval": "Polling interval (seconds)"
+        }
+      }
+    }
+  }
+}

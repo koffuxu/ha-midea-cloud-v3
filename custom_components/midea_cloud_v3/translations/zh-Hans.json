@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "选择 OAuth2 应用凭据"
+      },
+      "configure": {
+        "title": "配置美的家庭与轮询参数",
+        "description": "选择要接入 Home Assistant 的美居家庭及状态轮询间隔。",
+        "data": {
+          "homegroup_ids": "美居家庭",
+          "include_offline": "包含当前离线设备",
+          "scan_interval": "轮询间隔（秒）"
+        }
+      },
+      "reauth_confirm": {
+        "title": "重新授权美的云 V3",
+        "description": "当前美居 OAuth2 授权已失效，请重新登录美居账号完成授权。"
+      }
+    },
+    "abort": {
+      "already_configured": "该美居账号已添加。",
+      "cannot_connect": "无法连接美的开放平台 V3 接口。",
+      "missing_credentials": "请先在 Home Assistant 应用凭据中添加美的 Client ID 与 Client Secret。",
+      "missing_user_id": "未能从美的接口获取到有效的 openUid。",
+      "oauth_error": "OAuth2 授权失败。",
+      "wrong_account": "授权的美居账号与当前配置条目不一致。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "美的云 V3 选项",
+        "data": {
+          "homegroup_ids": "美居家庭",
+          "include_offline": "包含当前离线设备",
+          "scan_interval": "轮询间隔（秒）"
+        }
+      }
+    }
+  }
+}

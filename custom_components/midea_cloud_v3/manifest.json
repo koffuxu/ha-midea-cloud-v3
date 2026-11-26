@@ -1,0 +1,13 @@
+{
+  "domain": "midea_cloud_v3",
+  "name": "Midea Cloud V3",
+  "codeowners": ["@koffuxu"],
+  "config_flow": true,
+  "dependencies": ["application_credentials"],
+  "documentation": "https://github.com/koffuxu/ha-midea-cloud-v3",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/koffuxu/ha-midea-cloud-v3/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
