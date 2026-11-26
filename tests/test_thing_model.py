@@ -80,10 +80,14 @@ class TestThingModelParser(unittest.TestCase):
             "metadata": {"category": "wall-switch", "version": "v10"},
             "modules": {
                 "wallSwitch1": {
-                    "properties": {"power": {"title": "开关", "type": "bool", "op": ["read", "write"]}}
+                    "properties": {
+                        "power": {"title": "开关", "type": "bool", "op": ["read", "write"]}
+                    }
                 },
                 "wallSwitch2": {
-                    "properties": {"power": {"title": "开关", "type": "bool", "op": ["read", "write"]}}
+                    "properties": {
+                        "power": {"title": "开关", "type": "bool", "op": ["read", "write"]}
+                    }
                 },
             },
         }

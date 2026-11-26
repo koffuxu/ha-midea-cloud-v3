@@ -32,7 +32,7 @@ class TestSigning(unittest.TestCase):
         expected = base64.b64encode(
             hmac.new(
                 secret.encode("utf-8"),
-                f"{method}{uri}{body}".encode("utf-8"),
+                f"{method}{uri}{body}".encode(),
                 hashlib.sha256,
             ).digest()
         ).decode("utf-8")
@@ -48,7 +48,7 @@ class TestSigning(unittest.TestCase):
         expected = base64.b64encode(
             hmac.new(
                 secret.encode("utf-8"),
-                f"{method}{uri}{qs}".encode("utf-8"),
+                f"{method}{uri}{qs}".encode(),
                 hashlib.sha256,
             ).digest()
         ).decode("utf-8")
